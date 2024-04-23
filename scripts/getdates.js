@@ -1,5 +1,5 @@
 // getdates.js
-
+console.log("Script loaded with defer attribute.");
 // Get the current year
 const currentYear = new Date().getFullYear();
 
