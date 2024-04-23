@@ -1,22 +1,24 @@
-// getdates.js
-console.log("Script loaded with defer attribute.");
-// Get the current year
-const currentYear = new Date().getFullYear();
-
-// Update the footer's first paragraph with the current year
-const copyrightYearElement = document.querySelector('footer p:first-of-type span');
-if (copyrightYearElement) {
-    copyrightYearElement.textContent = currentYear;
-}
-
-// Get the last modified date of the document
-const lastModifiedDate = new Date(document.lastModified);
-
-// Format the last modified date with date and time
-const formattedLastModifiedDate = `${lastModifiedDate.toDateString()} ${lastModifiedDate.toLocaleTimeString()}`;
-
-// Update the footer's second paragraph with the formatted last modified date
-const lastModifiedElement = document.querySelector('footer p:last-of-type');
-if (lastModifiedElement) {
-    lastModifiedElement.textContent = `Document last modified: ${formattedLastModifiedDate}`;
-}
+document.addEventListener("DOMContentLoaded", function () {
+    // select the DOM elements for output
+    const currentYearElement = document.querySelector("#currentyear");
+    const lastModifiedElement = document.querySelector("#lastModified");
+  
+    // get the current year
+    const currentYear = new Date().getFullYear();
+  
+    // set the copyright year dynamically
+    currentYearElement.textContent = currentYear;
+  
+    // get the last modified date dynamically
+    const lastModifiedDate = new Date(document.lastModified);
+  
+    // set the last modified date dynamically
+    lastModifiedElement.textContent = `Last modified: ${new Intl.DateTimeFormat(
+      "en-US",
+      {
+        dateStyle: "medium",
+        timeStyle: "short",
+      }
+    ).format(lastModifiedDate)}`;
+  });
+  
