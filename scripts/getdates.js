@@ -5,5 +5,5 @@ const currentYear = new Date().getFullYear();
 const lastModifiedDate = new Date(document.lastModified);
 
 // Update the HTML elements
-document.querySelector('footer p:first-child').textContent = `© ${currentYear} - Arcee Juan - Philippines`;
+document.getElementById('currentYear').innerHTML = `&copy; ${currentYear} - Arcee Juan - Philippines`;
 document.getElementById('lastModifiedDate').textContent = `Last modified: ${lastModifiedDate.toDateString()}`;
