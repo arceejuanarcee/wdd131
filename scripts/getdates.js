@@ -1,23 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // select the DOM elements for output
-  const currentYearElement = document.querySelector("#currentYear");
-  const lastModifiedElement = document.querySelector("#lastModifiedDate");
+// Get the current year
+const currentYear = new Date().getFullYear();
 
-  // get the current year
-  const currentYear = new Date().getFullYear();
+// Get the last modified date
+const lastModifiedDate = new Date(document.lastModified);
 
-  // set the copyright year dynamically
-  currentYearElement.textContent = currentYear;
-
-  // get the last modified date dynamically
-  const lastModifiedDate = new Date(document.lastModified);
-
-  // set the last modified date dynamically
-  lastModifiedElement.textContent = `Last modified: ${new Intl.DateTimeFormat(
-      "en-US",
-      {
-          dateStyle: "medium",
-          timeStyle: "short",
-      }
-  ).format(lastModifiedDate)}`;
-});
+// Update the HTML elements
+document.getElementById('currentYear').textContent = currentYear;
+document.getElementById('lastModifiedDate').textContent = `Last modified: ${lastModifiedDate.toDateString()}`;
