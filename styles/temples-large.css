@@ -1,0 +1,44 @@
+nav ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(47, 112, 47);
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.main-nav li {
+    margin-right: 10px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+nav a:hover {
+    text-decoration:overline;
+}
