@@ -65,7 +65,7 @@
     }
 
     main {
-        display: block;
+        
         grid-template-columns: repeat(1, 1fr); /* Changed from 3 to 1 column */
         gap: 20px;
         padding: 20px;
@@ -73,21 +73,21 @@
 
     figure {
         margin: 0;
-        max-width: 100%; /* Set a maximum width for the figures */
+         /* Set a maximum width for the figures */
     }
-
+    
     img {
-        max-width: 100%; /* Set a maximum width for the images */
-        height: auto; /* Maintain aspect ratio */
+        width: 300px;
+        height: 300px;
+        /*max-width: 50%;*/ /* Set a maximum width for the images */
+        /*height: auto; */ /* Maintain aspect ratio */
     }
 
     figcaption {
         text-align: center;
     }
 
-    .center {
-        text-align: center; /* Center the h2 */
-    }
+   
 
     .grid-container {
         display: grid;
