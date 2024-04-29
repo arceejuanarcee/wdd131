@@ -43,5 +43,55 @@
     nav a:hover {
         text-decoration:overline;
     }
+
+    main {
+        display: block;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    figure {
+        margin: 0;
+        max-width: 100%; /* Set a maximum width for the figures */
+    }
+    
+    img {
+        max-width: 100%; /* Set a maximum width for the images */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    figcaption {
+        text-align: center;
+    }
+
+    .center {
+        text-align: center; /* Center the h2 */
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .grid-container figure {
+        margin: 0;
+        max-width: 100%; /* Set a maximum width for the figures */
+    }
+
+    .grid-container img {
+        max-width: 100%; /* Set a maximum width for the images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .grid-container figcaption {
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
     
 }
