@@ -1,28 +1,47 @@
 @media (max-width: 600px) {
+    
     nav ul {
         flex-direction: column;
-        
+        align-items: center;
     }
 
     nav ul li {
         margin-right: 0;
         margin-bottom: 5px;
     }
+    
 
     header {
-        
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
         background-color: rgb(47, 112, 47);
         color: #fff;
+        position: relative;
     }
-    
+
     h1 {
         margin: 0;
         font-size: 24px;
     }
-    
+
+    .main-nav {
+        display: none; /* Initially hide the navigation */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgb(47, 112, 47);
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .main-nav.open {
+        display: flex; /* Show the navigation when the "open" class is applied */
+        top: 100%;
+    }
+
     .main-nav ul {
         list-style-type: none;
         margin: 0;
@@ -30,37 +49,38 @@
         display: flex;
         justify-content: end;
     }
-    
+
     .main-nav li {
         margin-right: 10px;
     }
-    
+
     .main-nav a {
         text-decoration: none;
         color: #fff;
         font-size: 14px;
     }
+
     nav a:hover {
-        text-decoration:overline;
+        text-decoration: overline;
     }
 
     main {
         display: block;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr); /* Changed from 3 to 1 column */
         gap: 20px;
         padding: 20px;
     }
-    
+
     figure {
         margin: 0;
         max-width: 100%; /* Set a maximum width for the figures */
     }
-    
+
     img {
         max-width: 100%; /* Set a maximum width for the images */
         height: auto; /* Maintain aspect ratio */
     }
-    
+
     figcaption {
         text-align: center;
     }
@@ -71,7 +91,7 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr); /* Changed from 3 to 1 column */
         gap: 10px;
         padding: 10px;
     }
@@ -90,8 +110,40 @@
         text-align: center;
     }
 
-    h2{
+    h2 {
         text-align: center;
     }
-    
+
+    footer {
+        background-color: rgb(47, 112, 47);
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    footer p {
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #hambutton {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: white;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #hambutton::before {
+        content: "☰";
+    }
+
+    #hambutton.open::before {
+        content: "❎";
+    }
+
+    .open a {
+        display: block;
+    }
 }
