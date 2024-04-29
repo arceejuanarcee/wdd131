@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         newListItem.textContent = text;
 
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
+        deleteButton.textContent = '❌';
         deleteButton.addEventListener('click', function () {
             list.removeChild(newListItem);
             input.focus();
