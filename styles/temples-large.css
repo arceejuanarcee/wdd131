@@ -60,6 +60,7 @@ figure {
 }
 
 img {
+    
     width: 300px;
     height: 300px;
     /*max-width: 50%;*/ /* Set a maximum width for the images */
@@ -73,6 +74,7 @@ figcaption {
 
 
 .grid-container {
+    place-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;

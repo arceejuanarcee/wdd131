@@ -90,6 +90,7 @@
    
 
     .grid-container {
+        place-items: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr); /* Changed from 3 to 1 column */
         gap: 10px;
