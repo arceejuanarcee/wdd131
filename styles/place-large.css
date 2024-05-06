@@ -1,7 +1,13 @@
+:root {
+    --main-color: #11235A;
+    --text-color: #F6ECA9;
+    --data-background: rgba(246, 236, 169, 0.5);
+}
+
 @media (min-width: 37.5em){
 
 header{
-    background-color: #11235A;
+    background-color: var(--main-color);
     padding: 20px;
     border-bottom: 10px solid #C6CF9B;
     }
@@ -9,7 +15,7 @@ header{
 h1{
     font-size: 55px;
     text-align: center;
-    color: #F6ECA9;
+    color: var(--text-color);
 }
 .hero img {
     width: 100%;
@@ -19,20 +25,20 @@ h1{
 
 footer{
     
-    background-color: #11235A;
+    background-color: var(--main-color);
     align-items: center;
     padding-bottom: 10px;
 }
 
 footer p{
-    color: #F6ECA9;
+    color: var(--text-color);
     text-align: center;
     padding: 10px;
 }
 
 h2{
-    color: #F6ECA9;
-    background-color:  #11235A;
+    color: var(--text-color);
+    background-color:  var(--main-color);
     padding: 10px 10px;
     z-index: 1;
     font-size: 25px;

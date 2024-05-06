@@ -1,6 +1,12 @@
+:root {
+    --main-color: #11235A;
+    --text-color: #F6ECA9;
+    --data-background: rgba(246, 236, 169, 0.5);
+}
+
 @media (max-width: 600px){
     header{
-        background-color: #11235A;
+        background-color: var(--main-color);
         padding: 20px;
         border-bottom: 10px solid #C6CF9B;
         }
@@ -8,7 +14,7 @@
     h1{
         font-size: 35px;
         text-align: center;
-        color: #F6ECA9;
+        color: var(--text-color);
     }
 
     .hero img {
@@ -18,13 +24,13 @@
       }
 
     footer {
-        background-color: #11235A;
+        background-color: var(--main-color);
         align-items: center;
         padding-bottom: 10px;
     }
 
     footer p {
-        color: #F6ECA9;
+        color: var(--text-color);
         text-align: center;
         padding: 10px;
     }
@@ -36,10 +42,10 @@
     }
 
     .data{
-        border-bottom: 1px solid #11235A;
+        border-bottom: 1px solid var(--main-color);
         margin-bottom: 10px;
     }
-    
+
     .data ul{
         list-style-type: none;
         padding-left: 0;
