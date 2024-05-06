@@ -1,16 +1,11 @@
 // Function to calculate wind chill factor
-function calculateWindChill(temperature, windSpeed) {
-    // Check if conditions are viable for wind chill calculation
-    if ((temperature <= 10 && windSpeed > 4.8) || (temperature <= 50 && windSpeed > 3)) {
-        // Calculate wind chill factor
-        let windChill = Math.round(13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16));
-        return windChill + '°C'; // Degrees Celsius symbol
-    } else {
-        return 'N/A'; // Conditions not met, wind chill not applicable
-    }
-}
+const calculateWindChill = (temperature, windSpeed) => (
+    ((temperature <= 10 && windSpeed > 4.8) || (temperature <= 50 && windSpeed > 3))
+    ? Math.round(13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16)) + '°C'
+    : 'N/A'
+);
 
-// Variables with static values for temperature and wind speed
+// Variables with static values for temperature and wind speed (Replace these with actual data if available)
 const temperature = 10; // Example temperature in Celsius
 const windSpeed = 5; // Example wind speed in km/h
 
