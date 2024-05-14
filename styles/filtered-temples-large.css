@@ -60,12 +60,11 @@ figure {
 }
 
 img {
-    
-    width: 300px;
-    height: 300px;
-    /*max-width: 50%;*/ /* Set a maximum width for the images */
-    /*height: auto; */ /* Maintain aspect ratio */
-}
+    /* width: 300px;
+     height: 300px;*/
+     max-width: 300px; /* Set a maximum width for the images */
+     height: auto;  /* Maintain aspect ratio */
+ }
 
 figcaption {
     text-align: center;
@@ -99,17 +98,16 @@ h2{
     text-align: center;
 }
 
-footer{
-    
+footer {
     background-color: rgb(47, 112, 47);
     align-items: center;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
-footer p{
+footer p {
     color: white;
     text-align: center;
-    padding: 10px;
+   /* padding: 10px; */
 }
 
 #hambutton {
