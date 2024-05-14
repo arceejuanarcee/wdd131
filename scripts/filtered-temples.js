@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamButton = document.getElementById('hambutton');
     const mainNav = document.querySelector('.main-nav');
     const gridContainer = document.querySelector('.grid-container');
+    const filterTitle = document.getElementById('filter-title');
 
     hamButton.addEventListener('click', function() {
         hamButton.classList.toggle('open');
@@ -114,7 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.main-nav a').forEach(item => {
         item.addEventListener('click', function(event) {
             event.preventDefault();
-            switch (item.textContent) {
+            const filter = item.getAttribute('data-filter');
+            filterTitle.textContent = filter; // Update the filter title
+            switch (filter) {
                 case 'Home':
                     displayTemples(temples);
                     break;
