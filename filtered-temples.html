@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album</title>
+    <meta name="description" content="An interactive temple picture album featuring temples from around the world">
+    <meta name="author" content="Arcee Juan">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <button id="hambutton" aria-label="Toggle navigation">☰</button>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="#" data-filter="Home">Home</a></li>
+                <li><a href="#" data-filter="Old">Old</a></li>
+                <li><a href="#" data-filter="New">New</a></li>
+                <li><a href="#" data-filter="Large">Large</a></li>
+                <li><a href="#" data-filter="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <!-- This is where temple cards will dynamically appear based on JavaScript actions -->
+        </div>
+    </main>
+
+    <footer>
+        <p id="currentYear"></p>
+        <p id="lastModifiedDate"></p>
+    </footer>
+
+    <script defer src="scripts/filtered-temples.js"></script>
+</body>
+</html>

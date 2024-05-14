@@ -1,0 +1,121 @@
+@media (min-width: 37.5em){
+nav ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+header {
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(47, 112, 47);
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}
+
+.main-nav li {
+    margin-right: 10px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    flex: 1 1 100%;
+}
+nav a:hover {
+    text-decoration:overline;
+}
+
+main {
+    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+figure {
+    margin: 0;
+     /* Set a maximum width for the figures */
+}
+
+img {
+    
+    width: 300px;
+    height: 300px;
+    /*max-width: 50%;*/ /* Set a maximum width for the images */
+    /*height: auto; */ /* Maintain aspect ratio */
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+
+.grid-container {
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container figure {
+    margin: 0;
+    max-width: 100%; /* Set a maximum width for the figures */
+}
+
+.grid-container img {
+    max-width: 100%; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.grid-container figcaption {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+footer{
+    
+    background-color: rgb(47, 112, 47);
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#hambutton {
+    display: none;
+}
+
+
+
+}
