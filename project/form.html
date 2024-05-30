@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="An interactive form and review page where a user can submit a review of a particular property and can see a confirmation of their reviews and how many times they submit it.">
+    <meta name="author" content="Arcee Juan">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-small.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo-ajia.webp" alt="AJIA Real Estate Marketing Logo">
+        <h1>AJIA Real Estate Marketing</h1>
+        <button id="hambutton" aria-label="Toggle navigation">☰</button>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="#listings">Property Listings</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="form.html">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form-main">
+        <div class="container">
+            <form id="review-form" method="get" action="review.html">
+                <label for="productName">Property Name</label>
+                <select id="productName" name="product" required>
+                    <option value="" disabled selected>Select a Property ...</option>
+                </select>
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">☆</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">☆☆</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">☆☆☆</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">☆☆☆☆</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">☆☆☆☆☆</label>
+                </div>
+                <label for="visit-date">Date of Property Visit</label>
+                <input type="date" id="visit-date" name="visit-date" required>
+                <fieldset>
+                    <legend>Which features did you find appealing during the property visit? (Check all that apply)</legend>
+                    <label><input type="checkbox" id="location" name="features" value="location"> Location</label>
+                    <label><input type="checkbox" id="amenities" name="features" value="amenities"> Modern Amenities</label>
+                    <label><input type="checkbox" id="condition" name="features" value="condition"> Excellent Condition</label>
+                    <label><input type="checkbox" id="views" name="features" value="views"> Scenic Views</label>
+                </fieldset>
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review"></textarea>
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" name="username">
+                <input type="submit" value="Post Review">
+                <button type="button" id="homeButton">Home</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> AJIA Real Estate Marketing. All rights reserved.</p>
+        <p id="lastModifiedDate"></p>
+    </footer>
+    <script defer src="scripts/form.js"></script>
+</body>
+</html>

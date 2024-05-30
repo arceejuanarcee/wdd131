@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="A review confirmation page where a user can see how many times they submitted a review.">
+    <meta name="author" content="Arcee Juan">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-small.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo-ajia.webp" alt="AJIA Real Estate Marketing Logo">
+        <h1>AJIA Real Estate Marketing</h1>
+        <button id="hambutton" aria-label="Toggle navigation">☰</button>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#listings">Property Listings</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="form.html">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Review Confirmation</h2>
+        <p>Thank you for your review! Your review has been submitted successfully.</p>
+        <p>You have submitted <span id="reviewCount">0</span> reviews.</p>
+        <a href="form.html" class="button">Return to Form</a>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> AJIA Real Estate Marketing. All rights reserved.</p>
+        <p id="lastModifiedDate"></p>
+    </footer>
+    <script defer src="scripts/form.js"></script>
+</body>
+</html>

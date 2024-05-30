@@ -93,7 +93,10 @@
 
     
     main {
-        padding: 1rem;
+        
+        grid-template-columns: repeat(1, 1fr); /* Changed from 3 to 1 column */
+        gap: 20px;
+        padding: 20px;
     }
     
     .grid-container {
@@ -144,15 +147,71 @@
         text-align: center;
     }
 
-    .main-wireframe img{
-        width: 75%;
-        height: 75%;
-        object-fit: cover;
+    figure {
+        margin: 0;
+        height: 50%;
+         /* Set a maximum width for the figures */
+    }
+    
+    img {
+       /* width: 300px;
+        height: 300px;*/
+        max-width: 75%; /* Set a maximum width for the images */
+        height: 50%;  /* Maintain aspect ratio */
     }
 
-    .main-small-wireframe img{
-        width: 75%;
-        height: 75%;
-        object-fit: cover;
+    figcaption {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #property-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+        justify-items: center;
+    }
+
+    #property-container figure {
+        display: flex; /* Using flexbox to center image and caption */
+        flex-direction: column; /* Stacking image and caption vertically */
+        align-items: center; /* Centering the image and caption horizontally */
+        margin: 0;
+        max-width: 75%;
+    }
+    
+
+    #property-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #property-container figcaption {
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+    
+    .employee-profiles-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .employee-profiles-content figure {
+        margin: 0;
+    }
+
+    .employee-profiles-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .employee-profiles-content figcaption {
+        text-align: center;
     }
 }
